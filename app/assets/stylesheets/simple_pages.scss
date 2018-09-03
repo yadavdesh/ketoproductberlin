@@ -13,6 +13,9 @@ margin-top:10%;
 h2{
   text-align: center;
   color: orange;
+  position: relative;
+  margin-top:10%;
+
 }
 
 .nav-item{
@@ -52,7 +55,15 @@ nav li a{
   color: #ffffff !important;
 }
 
-img{
+
+.hero-image{
+  height: 100%;
   width: 100%;
 
+  text-align: center;
+  img{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
 }
