@@ -5,14 +5,16 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
+
+
   <div class="carousel-inner">
     <% @products.each do |product| %>
-    <div class="carousel-item <%= " active" if product == @products.first %>">
+    <div class="carousel-item  responsive <%= " active" if product == @products.first %>">
       <%= image_tag(product.image_url) %>
 
-    <div class="carousel-caption d-none d-md-block">
-      <%= product.name %>
-    </div>
+      <div class="carousel-caption d-none d-md-block">
+        <%= product.name %>
+      </div>
     </div>
     <% end %>
   </div>

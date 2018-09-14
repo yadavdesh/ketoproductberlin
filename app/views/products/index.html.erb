@@ -3,20 +3,11 @@
 <h1>Products</h1>
 
 
-<div class="container-fluid">
+<div class="container-fluid product">
 	<div class="row">
-		<% @products.each do |product| %>
-			<div class="col-sm">
-          <%= image_tag(product.image_url, class:"img-fluid") unless product.image_url.nil? %>
-  				<h1><%= product.name %></h1>
-  				<p><%= product.description%></p>
-  				<p><%= product.colour%></p>
-  				<strong>$ <%= product.price%></strong>
-          <%= link_to 'Show', product %>
-          <%= link_to 'Edit', edit_product_path(product) %>
-          <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-			</div><!-- /col -->
-		<% end %>
+
+			<%= render @products%>
+
 	</div>
 </div>
 
