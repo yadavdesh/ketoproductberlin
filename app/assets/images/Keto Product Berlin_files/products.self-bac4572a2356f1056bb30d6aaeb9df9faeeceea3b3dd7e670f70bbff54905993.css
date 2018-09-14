@@ -1,0 +1,15 @@
+/* line 5, /Users/deshbhardwaj/Desktop/CF/rails/firstapp/app/assets/stylesheets/products.scss */
+.container-fluid {
+  margin-top: 5%;
+}
+
+/* line 9, /Users/deshbhardwaj/Desktop/CF/rails/firstapp/app/assets/stylesheets/products.scss */
+.col-sm {
+  border-style: solid;
+  margin: 10px;
+}
+
+/* line 15, /Users/deshbhardwaj/Desktop/CF/rails/firstapp/app/assets/stylesheets/products.scss */
+h1 {
+  font-size: 1.5rem;
+}

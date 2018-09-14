@@ -1,0 +1,73 @@
+/* line 5, /Users/deshbhardwaj/Desktop/CF/rails/firstapp/app/assets/stylesheets/simple_pages.scss */
+h1 {
+  text-align: center;
+  font-family: Futura, Helvetica, Arial, sans-serif;
+  color: steelblue;
+  position: relative;
+  margin-top: 10%;
+}
+
+/* line 13, /Users/deshbhardwaj/Desktop/CF/rails/firstapp/app/assets/stylesheets/simple_pages.scss */
+h2 {
+  text-align: center;
+  color: orange;
+  position: relative;
+  margin-top: 10%;
+}
+
+/* line 21, /Users/deshbhardwaj/Desktop/CF/rails/firstapp/app/assets/stylesheets/simple_pages.scss */
+.nav-item {
+  padding: 10px;
+}
+
+/* line 27, /Users/deshbhardwaj/Desktop/CF/rails/firstapp/app/assets/stylesheets/simple_pages.scss */
+footer {
+  flex: none;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* line 34, /Users/deshbhardwaj/Desktop/CF/rails/firstapp/app/assets/stylesheets/simple_pages.scss */
+.contact {
+  text-align: center;
+  font-family: Helvetica, sans-serif, Arial;
+  margin-top: 5%;
+  font-size: 1.3em;
+}
+
+/* line 42, /Users/deshbhardwaj/Desktop/CF/rails/firstapp/app/assets/stylesheets/simple_pages.scss */
+body {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+/* line 48, /Users/deshbhardwaj/Desktop/CF/rails/firstapp/app/assets/stylesheets/simple_pages.scss */
+nav li a:hover {
+  color: #fc0;
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+/* line 54, /Users/deshbhardwaj/Desktop/CF/rails/firstapp/app/assets/stylesheets/simple_pages.scss */
+nav li a {
+  color: #ffffff !important;
+}
+
+/* line 59, /Users/deshbhardwaj/Desktop/CF/rails/firstapp/app/assets/stylesheets/simple_pages.scss */
+.hero-image {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+/* line 64, /Users/deshbhardwaj/Desktop/CF/rails/firstapp/app/assets/stylesheets/simple_pages.scss */
+.hero-image img {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+/* line 71, /Users/deshbhardwaj/Desktop/CF/rails/firstapp/app/assets/stylesheets/simple_pages.scss */
+.carousel-inner {
+  margin-top: 10%;
+}
