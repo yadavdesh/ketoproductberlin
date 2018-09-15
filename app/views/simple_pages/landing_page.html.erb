@@ -8,32 +8,16 @@
 
 
   <div class="carousel-inner">
-    <% @products.each do |product| %>
-    <div class="carousel-item  responsive <%= " active" if product == @products.first %>">
-      <%= image_tag(product.image_url) %>
-
-      <div class="carousel-caption d-none d-md-block">
-        <%= product.name %>
-      </div>
-    </div>
-
-    <div class="carousel-item">
+  <% @products.each do |product| %>
+  <div class="carousel-item  responsive <%= " active" if product == @products.first %>">
     <%= image_tag(product.image_url) %>
 
     <div class="carousel-caption d-none d-md-block">
       <%= product.name %>
     </div>
   </div>
-
-  <div class="carousel-item">
-    <%= image_tag(product.image_url) %>
-
-    <div class="carousel-caption d-none d-md-block">
-      <%= product.name %>
-    </div>
-  </div>
-    <% end %>
-  </div>
+  <% end %>
+</div>
 
 
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
