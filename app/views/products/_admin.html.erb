@@ -1,0 +1,13 @@
+<%= form_with(url: products_path, method: 'post', local: true) do |form| %>
+    <%= form.label :name, class:'admin-item' %>
+    <%= form.text_field :name, class:'admin-item' %><br>
+    <%= form.label :description, class:'admin-item' %>
+    <%= form.text_area :description, class:'admin-item' %><br>
+    <%= form.label :image_url, class:'admin-item' %>
+    <%= form.text_field :image_url, class:'admin-item' %><br>
+    <%= form.label :color, class:'admin-item' %>
+    <%= form.text_field :color, class:'admin-item' %><br>
+    <%= form.label :price, class:'admin-item' %>
+    <%= form.text_field :price, class:'admin-item' %><br><br>
+    <%= form.submit 'update' %>
+<% end %>

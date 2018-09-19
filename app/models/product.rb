@@ -8,4 +8,5 @@ class Product < ApplicationRecord
   def self.psearch(search_term)
     Product.where("name ilike ?", "%#{search_term}%")
   end
+
 end
