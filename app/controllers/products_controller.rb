@@ -11,8 +11,6 @@ class ProductsController < ApplicationController
     elsif
       Rails.env.production?
       @products = Product.psearch(search_term)
-
-
     else
       @products = Product.all
     end

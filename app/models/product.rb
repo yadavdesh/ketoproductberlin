@@ -6,6 +6,6 @@ class Product < ApplicationRecord
   end
 
   def self.psearch(search_term)
-    Product.where("name ilike ?", "%#{search_term}%")
+    Product.where("name ILIKE ?", "%#{search_term}%")
   end
 end
