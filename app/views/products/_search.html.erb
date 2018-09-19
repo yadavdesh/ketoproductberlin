@@ -1,0 +1,7 @@
+<div class="search responsive">
+  <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
+    <%= form.label :q, 'Search for:', class:'search-item' %>
+    <%= form.text_field :q, id: 'q', value: params[:q], class:'search-item' %>
+    <%= form.submit 'Search', class:'primary search-item' %>
+  <% end %>
+</div>
