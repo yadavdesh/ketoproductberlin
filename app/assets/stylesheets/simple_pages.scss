@@ -59,9 +59,8 @@ nav li a{
   }
 }
 
-.carousel-inner{
-  margin-top: 10%;
-}
+
+
 .carousel-caption{
   position: relative !important;
   margin-top: 25px;
@@ -69,6 +68,7 @@ nav li a{
   text-align: left !important;
   font-size: 25px;
 }
+
 
 body{
   margin: 0;
@@ -79,4 +79,24 @@ body{
   top: 90px;
   text-align: center !important;
   color: white !important;
+}
+
+.contact-form{
+  width: 50%;
+  margin: auto;
+  font-weight: bold;
+
+}
+
+.form_label{
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  background-color: #0b5de5;
+
+}
+
+.panel-body{
+  text-align: center;
+  font-size: 25px;
 }
