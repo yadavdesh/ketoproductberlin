@@ -1,7 +1,19 @@
-<h1>Contact us</h1>
-<div class="contact">
-<p class="name">Desh Bhardwaj<p>
-<p class="address">Am Steinberg 4, Berlin</p>
-<p class="email">bhardwajdesh@gmail.com</p>
-<p class="phone">ph: +4917645936837</p>
-</div>
+<h1>Contact Us</h1>
+<%= flash[:notice] %>
+<%= form_with(url:"/simple_pages/thank_you", method: "post", local: true) do |form| %>
+  <div class="contact-form">
+    <div class="form-group">
+      <%= form.label :name %>
+      <%= form.text_field :name, class: "form-control", placeholder: "Enter name" %>
+    </div>
+    <div class="form-group">
+      <%= form.label :email %>
+      <%= form.text_field :email, class: "form-control", placeholder: "Enter email" %>
+    </div>
+    <div class="form-group">
+      <%= form.label :message %>
+      <%= form.text_area :message, class: "form-control", placeholder: "Enter message" %>
+    </div>
+    <%= form.submit "Send", class: "form_label form-group" %>
+  </div>
+<%end%>

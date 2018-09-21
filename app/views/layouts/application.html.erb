@@ -18,7 +18,7 @@
 
         <a class="nav navbar-brand" href="/">
 
-          <img alt="brand" id="brand_logo"  <%= image_tag("logo.png")%>
+        <%= image_tag("logo.png", id:"brand_logo")%>
 
         </a>
         <nav class="navbar-toggler " data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,6 +31,7 @@
           <li class="nav-item"><%= render 'products/search'%></li>
           <li class="nav-item active"><%= link_to "Home", root_path %></li>
           <li class="nav-item"><%= link_to "About", simple_pages_about_path %></li>
+          <li class="nav-item"><%= link_to "Products", products_path %></li>
           <li class="nav-item"><%= link_to "Contact", simple_pages_contact_path %></li>
         </ul>
       </nav>
