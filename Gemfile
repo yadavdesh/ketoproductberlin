@@ -72,3 +72,6 @@ end
 group :development, :test do
   gem 'sqlite3'
 end
+
+# devise for authentication
+gem 'devise'

@@ -27,8 +27,8 @@ a {
   }
 
   &:hover {
-    color: #fc0 !important;
-
+    color: #fff;
+    background-color: #000;
   }
 }
 
@@ -81,4 +81,5 @@ div {
 
 label {
   display: block;
+  font-weight: bold;
 }
