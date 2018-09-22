@@ -4,7 +4,7 @@ This is my first ruby learning project.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: 5.1
 
 * System dependencies
 
