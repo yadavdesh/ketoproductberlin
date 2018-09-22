@@ -6,6 +6,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
          has_many :orders
-         belongs_to :order
+         #belongs_to :order
 
 end
