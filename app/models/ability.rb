@@ -6,6 +6,8 @@ class Ability
     can :manage, User, id: user.id
 
 
+
+
     # The first argument to `can` is the action you are giving the user
     # permission to do.
     # If you pass :manage it will apply to every action. Other common actions
@@ -25,4 +27,4 @@ class Ability
     # https://github.com/CanCanCommunity/cancancan/wiki/Defining-Abilities
 
   end
-end
+
