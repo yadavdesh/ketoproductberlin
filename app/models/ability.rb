@@ -5,8 +5,8 @@ class Ability
     user ||= User.new # guest user (not logged in)
     can :manage, User, id: user.id
   end
-end
-    
+
+
     # The first argument to `can` is the action you are giving the user
     # permission to do.
     # If you pass :manage it will apply to every action. Other common actions
@@ -24,5 +24,5 @@ end
     #
     # See the wiki for details:
     # https://github.com/CanCanCommunity/cancancan/wiki/Defining-Abilities
-  end
+  
 end
