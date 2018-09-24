@@ -1,7 +1,7 @@
 
     <div class="col-sm">
-      <%= image_tag(product.image_url, class:"img-fluid") unless product.image_url.nil? %>
-      <h1><%= link_to product.name, product %></h1>
-      <p><%= product.description %></p>
-      <strong>$ <%= product.price %></strong>
+      <%= image_tag(product.image_url, class:"img-fluid procuct-img") unless product.image_url.nil? %>
+      <h1 class="name"><%= link_to product.name, product %></h1>
+      <p class="description"><%= product.description %></p>
+      <strong class="price">$ <%= product.price %></strong>
     </div><!-- /col -->
