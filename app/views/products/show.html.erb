@@ -4,7 +4,7 @@
 <div class="row">
   <div class="col-sm-6">
     <%= image_tag(@product.image_url) %>
-  </div>
+  </div> <!--end of col div-->
   <div class="col-sm-6">
     <p>
       <strong>Name:</strong>
@@ -18,17 +18,26 @@
       <strong>Price:</strong>
       <%= @product.price %>
     </p>
-  </div>
+
+
+    <p>Average Rating:
+    <div class="rated" data-score="<%= @product.average_rating %>"></div>
+    </p>
+
+  </div> <!--end of col div-->
 </div> <!--end of row div -->
 
-<div class="navigation-btn>"
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
-</div>
+<div>
+  <div class="navigation-btn>"
+    <%= link_to 'Edit', edit_product_path(@product) %> |
+    <%= link_to 'Back', products_path %>
+  </div>
 
+  <!--
+    <%= @product.highest_rating_comment %>
+-->
+  <!-- new comment section-->
+    <%= render 'new_comment' %>
 
-<div class="comment">
-<%= @product.highest_rating_comment %>
-</div>
-
-</div>
+  <!-- All comment section-->
+    <%= render 'comments' %>

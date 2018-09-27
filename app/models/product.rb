@@ -19,6 +19,12 @@ class Product < ApplicationRecord
 #method for ratings
   def highest_rating_comment
   comments.rating_desc.first
-end
+  end
+
+#method to calculate average rating for any prdroduct
+
+  def average_rating
+  comments.average(:rating).to_f
+  end
 
 end

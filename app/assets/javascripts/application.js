@@ -14,5 +14,6 @@
 //= require activestorage
 //= require turbolinks
 //= require jquery
+//= require jquery.raty.js
 //= require_tree .
 $("form").validator();
