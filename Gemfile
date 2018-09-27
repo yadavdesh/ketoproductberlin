@@ -78,3 +78,6 @@ gem 'devise'
 
 # CanCanCan authorization
 gem 'cancancan', '~> 2.0'
+
+# pagination
+gem 'will_paginate', '~> 3.1.0'

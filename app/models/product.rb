@@ -2,6 +2,9 @@ class Product < ApplicationRecord
   has_many :orders
   has_many :comments
 
+# Validation
+  validates :name, presence: true
+
 # method for search on dev
   def self.search(search_term)
     Product.where("name LIKE ?", "%#{search_term}%")

@@ -28,7 +28,7 @@
 </div> <!--end of row div -->
 
 <div>
-  <div class="navigation-btn>"
+  <div class="navigation-btn">
     <%= link_to 'Edit', edit_product_path(@product) %> |
     <%= link_to 'Back', products_path %>
   </div>
@@ -41,3 +41,8 @@
 
   <!-- All comment section-->
     <%= render 'comments' %>
+
+  <!-- pagination rendre -->
+
+    <%= will_paginate @comments %>
+  

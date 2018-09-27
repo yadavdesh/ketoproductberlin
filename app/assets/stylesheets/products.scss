@@ -42,3 +42,14 @@ h1{
   text-align: center;
   margin-top: 15px;
 }
+
+.pagination {
+  display: inline;
+  .previous_page,
+  .previous_page.disabled,
+  .current,
+  .next_page,
+  .next_page.disabled {
+    margin: 10px;
+  }
+}
