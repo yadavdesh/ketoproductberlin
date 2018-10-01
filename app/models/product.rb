@@ -15,9 +15,6 @@ class Product < ApplicationRecord
     Product.where("name ilike ?", "%#{search_term}%")
   end
 
-  def self.pid(p_id)
-    Product.where("p_id ?", p_id)
-  end
 
 #method for ratings
   def highest_rating_comment
