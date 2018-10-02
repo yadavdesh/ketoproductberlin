@@ -58,15 +58,18 @@ end
 #sqlite3 for dev
 group :development, :test do
   gem 'sqlite3'
+  gem 'rspec-rails', '~> 3.8'
 end
+=begin
+# Rspec test against master branch
+%w[rspec-core rspec-expectations rspec-mocks rspec-rails rspec-support].each do |lib|
+  gem lib, :git => "https://github.com/rspec/#{lib}.git", :branch => 'master'
+end
+=end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-#access postgres-sql jquery
-group :production do
-  gem 'pg'
-end
 
 #sqlite3 dev environment
 group :development, :test do
@@ -82,4 +85,3 @@ gem 'cancancan', '~> 2.0'
 # pagination
 gem 'will_paginate', '~> 3.1.0'
 gem 'twitter-bootstrap-rails'
-gem 'rspec-rails'
