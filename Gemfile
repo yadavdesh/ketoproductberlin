@@ -85,3 +85,6 @@ gem 'cancancan', '~> 2.0'
 # pagination
 gem 'will_paginate', '~> 3.1.0'
 gem 'twitter-bootstrap-rails'
+
+#strip gem to add strip payment
+gem 'stripe'
