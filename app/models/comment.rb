@@ -4,6 +4,4 @@ class Comment < ApplicationRecord
   scope :rating_desc, -> { order(rating: :desc) }
   validates :body, presence: true
   validates :rating, numericality: { only_integer: true }
-
-
 end
