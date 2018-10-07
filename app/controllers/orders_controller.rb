@@ -18,4 +18,8 @@ class OrdersController < ApplicationController
   def destroy
   end
 
+  def set_order
+      @order = Order.find(params[:id])
+  end
+
 end

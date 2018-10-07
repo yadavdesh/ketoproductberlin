@@ -16,4 +16,14 @@ class UserMailer < ApplicationMailer
        subject: "Welcome to #{@appname}!")
 end
 
+def order_placed(user, order)
+    @first_name = user.first_name
+    @last_name = user.last_name
+    @product = order.product.name
+    @total = order.product.price
+    @appname = "Keto Product Berlin"
+    mail(to: user.email,
+    subject: "Thank you! Your order has been placed")
+  end
+
 end
