@@ -1,6 +1,10 @@
-<h1>Editing Product</h1>
 
+<% if signed_in? && current_user.admin? %>
+<h1>Editing Product</h1>
 <%= render 'form', product: @product %>
 
-<%= link_to 'Show', @product %> 
+<%= link_to 'Show', @product %>
 <%= link_to 'Back', products_path %>
+<% else %>
+<%= "404 Error Page"%>
+<% end %>

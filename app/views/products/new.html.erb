@@ -1,5 +1,10 @@
+<% if signed_in? && current_user.admin? %>
+
 <h1>New Product</h1>
 
 <%= render 'form', product: @product %>
 
 <%= link_to 'Back', products_path %>
+<% else %>
+<%= " 404 error page" %>
+<% end %>

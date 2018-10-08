@@ -83,3 +83,6 @@ gem 'twitter-bootstrap-rails'
 
 #strip gem to add strip payment
 gem 'stripe'
+
+#Brakeman scanner rubygem
+gem 'brakeman'
