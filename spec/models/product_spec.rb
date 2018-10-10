@@ -7,7 +7,7 @@ describe Product do
   #describe "#average_rating" do # - the '#' signifies that we are testing an instance method - describe the method you will be testing (which belongs to the Class)
   context "when the product has comments" do
 
-    let(:product){Product.create!(name:"Flexseed flour", url:"https://www.bobsredmill.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/2/1235s164_flaxseedmeal_f_hr.jpg", price:5.50)}
+    let(:product){Product.create!(name:"Flexseed flour", image_url:"https://www.bobsredmill.com/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/1/2/1235s164_flaxseedmeal_f_hr.jpg", price:5.50)}
     let(:user){User.create!(email:"testdesh@gmail.com", password:"123456")}
 
     before do
