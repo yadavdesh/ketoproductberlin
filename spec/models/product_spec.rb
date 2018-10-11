@@ -20,12 +20,28 @@ describe Product do
       expect(product.highest_rating_comment.rating).to eq 5
     end
 
-    it "returns the lowest rating of all comments" do
-      expect(product.lowest_rating_comment.rating).to eq 1
+  end
+
+  #produc name validation
+  context "when product has no name" do
+      before do
+        @product = Product.create(:description => "This is a test")
+      end
+
+      it 'is an invalid product' do
+        expect(@product).not_to be_valid
+      end
     end
 
-    it "returns the average rating of all comments" do
-      expect(Product.average_rating).to eq 3
-    end
-  end
+    #produc image_url validation
+    context "when product has no image_url" do
+        before do
+          @product = Product.create(:description => "This is a test")
+        end
+
+        it 'is an invalid product' do
+          expect(@product).not_to be_valid
+        end
+      end
+
 end
