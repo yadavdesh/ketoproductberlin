@@ -19,6 +19,14 @@ describe Product do
     it "returns the highest rating of all comments" do
       expect(product.highest_rating_comment.rating).to eq 5
     end
+    it "returns the lowest rating of all comments" do
+      expect(product.lowest_rating_comment.rating).to eq 1
+    end
+
+    it "returns the average rating of all comments" do
+      expect(product.average_rating).to eq 3
+    end
+
 
   end
 
