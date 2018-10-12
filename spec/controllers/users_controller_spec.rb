@@ -6,8 +6,8 @@ require 'rails_helper'
 describe UsersController, type: :controller do
     context 'user sign_in'do
       before do
-        @user = User.create!(first_name: "dtest", last_name: "db", email: "dbtest1@gmail.com", password: "123456")
-        @user2 = User.create!(first_name: "vtest", last_name: "vb", email: "dbtest2@gmail.com", password: "123456")
+        @user = FactoryBot.create(:user)
+        @user2 = FactoryBot.create(:user)
       end
 
     #User logged-in in test
