@@ -27,4 +27,9 @@ class Product < ApplicationRecord
   comments.average(:rating).to_f
   end
 
+#method for ratings
+  def lowest_rating_comment
+    comments.rating_desc.last
+  end
+
 end
