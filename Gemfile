@@ -86,3 +86,6 @@ gem 'stripe'
 
 #Brakeman scanner rubygem
 gem 'brakeman'
+
+# rspec functional test gem
+gem 'rails-controller-testing'
