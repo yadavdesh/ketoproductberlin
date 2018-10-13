@@ -92,3 +92,6 @@ gem 'brakeman'
 
 # rspec functional test gem
 gem 'rails-controller-testing'
+
+#memcachier gem
+gem 'dalli'

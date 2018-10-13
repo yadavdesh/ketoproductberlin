@@ -1,6 +1,10 @@
+<% cache product do %>
+
 <div class="col-sm">
       <%=link_to image_tag(product.image_url, class:"img-fluid procuct-img"),product unless product.image_url.nil? %>
       <h1 class="name"><%= link_to product.name, product %></h1>
       <p class="description"><%= product.description %></p>
       <strong class="price">$ <%= product.price %></strong>
     </div><!-- /col -->
+
+    <% end %>
