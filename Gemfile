@@ -95,6 +95,3 @@ gem 'rails-controller-testing'
 
 #memcachier gem
 gem 'dalli'
-
-#performance tool
-gem 'newrelic_rpm'
