@@ -12,9 +12,12 @@ Rails.application.routes.draw do
   get 'simple_pages/404'
   post 'simple_pages/thank_you'
   root 'simple_pages#landing_page'
+  #action cable process call
+  mount ActionCable.server => '/cable'
   post 'payments/create'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :orders, only: [:index, :show, :create, :destroy]
+
 
 end
