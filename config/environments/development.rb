@@ -62,6 +62,6 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
-  #generating pain js file to create ActionCable channel instead of coffee script
+  # Use javascript instead of Coffeescript in generator
   config.app_generators.javascript_engine = :javascript
 end

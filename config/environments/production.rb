@@ -104,7 +104,9 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-
+  # WebSocket configuration
   config.web_socket_server_url = "wss://ketoproductberlin.herokuapp.com/cable"
-config.action_cable.allowed_request_origins = ['https://ketoproductberlin.herokuapp.com', 'http://ketoproductberlin.herokuapp.com']
+
+  # Allow ActionCable requests
+  config.action_cable.allowed_request_origins = ['https://ketoproductberlin.herokuapp.com', 'http://ketoproductberlin.herokuapp.com']
 end
