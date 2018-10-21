@@ -1,7 +1,7 @@
 <div class="container-fluid">
 
 
-<div class="row" data-product-id="<%= @product.id %>">
+<div class="row" data-product-id = "<%= @product.id %>" >
   <div class="col-sm-6">
     <%= image_tag(@product.image_url, class: "img-zoom", data_zoom_image: "/assets/"+@product.image_url) %>
   </div> <!--end of col div-->
@@ -26,6 +26,7 @@
 
     <%= form_with(url: '/payments/create') do |form| %>
       <%= render partial: "shared/stripe_checkout_button" %>
+
     <% end %>
 
   </div> <!--end of col div-->
