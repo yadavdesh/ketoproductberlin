@@ -1,7 +1,7 @@
-<div class="container-fluid">
+<div class="container-fluid" data-product-id = "<%= @product.id %>">
 
 
-<div class="row" data-product-id = "<%= @product.id %>" >
+<div class="row">
   <div class="col-sm-6">
     <%= image_tag(@product.image_url, class: "img-zoom", data_zoom_image: "/assets/"+@product.image_url) %>
   </div> <!--end of col div-->
