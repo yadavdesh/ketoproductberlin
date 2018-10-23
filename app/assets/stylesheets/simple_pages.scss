@@ -1,33 +1,6 @@
-// Place all the styles related to the simple_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-h1{
-text-align: center;
-font-family: Futura, Helvetica, Arial, sans-serif;
-color: steelblue;
-}
-
-h2{
-  text-align: center;
-  color: orange;
 
 
-}
-
-.nav-item{
-  padding: 10px;
-
-}
-
-
-footer{
-  flex: none;
-  text-align: center;
-  color: #ffffff;
-
-}
-
+/* contact page*/
 .contact{
   text-align: center;
   font-family: Helvetica, sans-serif, Arial ;
@@ -36,7 +9,7 @@ footer{
 
 }
 
-
+/*navigation */
 
 nav li a:hover{
   color: #fc0;
@@ -48,7 +21,12 @@ nav li a{
   color: #ffffff !important;
 }
 
+.nav-item{
+  padding: 10px;
 
+}
+
+/* index page*/
 .hero-image{
   img{
     height: 100%;
@@ -60,10 +38,10 @@ nav li a{
 }
 
 
-
+/*carousel product name*/
 .carousel-caption{
   position: relative !important;
-  margin-top: 25px;
+  margin-top: 5%;
   margin-left: 30%;
   color: #000000 !important;
   text-align: left !important;
@@ -71,20 +49,16 @@ nav li a{
 
 }
 
-
+/*carousel image */
 .carousel-item{
   img{
-    margin-left: 40%;
-
+    width: 30%;
+    height:30%;
+    margin-left: 35%;
   }
 
 }
 
-
-
-body{
-  margin: 0;
-}
 
 .page-title{
   position: absolute;
