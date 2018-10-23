@@ -64,10 +64,22 @@ nav li a{
 .carousel-caption{
   position: relative !important;
   margin-top: 25px;
+  margin-left: 30%;
   color: #000000 !important;
   text-align: left !important;
   font-size: 25px;
+
 }
+
+
+.carousel-item{
+  img{
+    margin-left: 40%;
+
+  }
+
+}
+
 
 
 body{
